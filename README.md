@@ -35,7 +35,7 @@ pip install pandas
 #### 4. Execute o script para gerar o banco
 
 ```bash
-python import_to_sqlite.py
+python Importar_Dados.py
 ```
 
 ### 🔍 Consultas SQL Interativas
