@@ -38,6 +38,15 @@ pip install pandas
 python Importar_Dados.py
 ```
 
+#### 5. Aguarde gerar o database.db
+```bash
+É normal demorar um pouquinho para gerar o database. Afinal, estamos lidando com uma grande quantidade de dados.
+
+#### 6. Use o comando "Run Query" no arquivo Queries.
+```bash
+ Você obterá as tabelas resultantes das consultas que fizemos.
+```
+
 ### 🔍 Consultas SQL Interativas
 
 #### 📌 Exemplo 1: Receitas mais avaliadas
