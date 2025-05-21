@@ -47,10 +47,14 @@ SELECT
     r.name AS receita,
     COUNT(v.review) AS total_avaliacoes,
     ROUND(AVG(v.rating), 2) AS media_nota
-FROM recipes r
-JOIN reviews v ON r.id = v.recipe_id
-GROUP BY r.id, r.name
-ORDER BY total_avaliacoes DESC
+FROM 
+    recipes r
+JOIN 
+    reviews v ON r.RecipeId = v.RecipeId
+GROUP BY 
+    r.RecipeId, r.name
+ORDER BY 
+    total_avaliacoes DESC
 LIMIT 10;
 ```
 
