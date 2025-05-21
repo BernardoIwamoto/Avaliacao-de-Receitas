@@ -124,9 +124,3 @@ Este projeto foca em **consultas claras e comentadas**, para que você entenda a
 ### 📚 Fonte dos Dados
 
 [Kaggle – Food.com Recipes and Reviews Dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)
-
-### 👨‍💻 Autor
-
-**Seu Nome Aqui**  
-Estudante de Ciência da Computação | Python & SQL Enthusiast  
-[LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/seu-usuario)
