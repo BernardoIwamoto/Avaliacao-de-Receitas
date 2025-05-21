@@ -1,26 +1,50 @@
 -- SQLite
+
+-- Top 10 receitas mais bem avaliadas 
 SELECT 
-    r.name AS receita,
-    COUNT(v.review) AS total_avaliacoes,
-    ROUND(AVG(v.rating), 2) AS media_nota
+    Name,
+    ROUND(AVG(rating), 2) AS media_nota,
+    COUNT(review) AS total_reviews
 FROM 
     recipes r
 JOIN 
     reviews v ON r.RecipeId = v.RecipeId
 GROUP BY 
-    r.RecipeId, r.name
+    r.RecipeId
+HAVING 
+    total_reviews >= 10
 ORDER BY 
-    total_avaliacoes DESC
+    media_nota DESC
 LIMIT 10;
 
-SELECT 
-    ingredient,
-    COUNT(*) AS vezes_usado
-FROM 
-    (SELECT TRIM(value) AS ingredient
-     FROM recipes, json_each(recipes.RecipeIngredientParts))
-GROUP BY 
-    ingredient
-ORDER BY 
-    vezes_usado DESC
+-- Receitas mais recém adicionadas
+SELECT Name, DatePublished
+FROM recipes
+ORDER BY DatePublished DESC
+LIMIT 10;
+
+-- Buscar por ingrediente -> Tomate
+SELECT Name, RecipeIngredientParts
+FROM recipes
+WHERE RecipeIngredientParts LIKE '%"tomato"%';
+
+-- Rankeia os autores por número de receitas
+SELECT AuthorName, COUNT(*) AS total_receitas
+FROM recipes
+GROUP BY AuthorId
+ORDER BY total_receitas DESC
+LIMIT 10;
+
+-- Top receitas com menos calorias
+SELECT Name, Calories, AggregatedRating
+FROM recipes
+WHERE Calories IS NOT NULL AND AggregatedRating >= 4
+ORDER BY Calories ASC
+LIMIT 10;
+
+-- Receitas mais rápidas
+SELECT Name, TotalTime
+FROM recipes
+WHERE TotalTime IS NOT NULL
+ORDER BY TotalTime ASC
 LIMIT 10;
