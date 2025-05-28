@@ -1,8 +1,8 @@
-## 🍽️ Recipe Evaluation System (SQL)
+## 🍽 Recipe Evaluation System (SQL)
 
 Projeto de portfólio com foco em análise de dados e consultas SQL interativas, baseado em receitas e avaliações de usuários da plataforma [Food.com](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews).
 
-### 📊 Objetivo
+###  Objetivo
 
 Este projeto transforma um conjunto de dados reais sobre receitas e avaliações em um **banco de dados SQLite**, onde você pode fazer perguntas como:
 
@@ -10,7 +10,7 @@ Este projeto transforma um conjunto de dados reais sobre receitas e avaliações
 - Quais têm as melhores notas?
 - Quais ingredientes são mais usados?
 
-### ⚙️ Como Rodar Localmente
+###  Como Rodar Localmente
 
 #### 1. Clone o repositório
 
@@ -47,9 +47,9 @@ python Importar_Dados.py
  Você obterá as tabelas resultantes das consultas que fizemos.
 ```
 
-### 🔍 Consultas SQL Interativas
+###  Consultas SQL Interativas
 
-#### 📌 Exemplo 1: Receitas mais avaliadas
+####  Exemplo 1: Receitas mais avaliadas
 
 ```sql
 SELECT 
@@ -67,6 +67,6 @@ ORDER BY
 LIMIT 10;
 ```
 
-### 📚 Fonte dos Dados
+###  Fonte dos Dados
 
 [Kaggle – Food.com Recipes and Reviews Dataset](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)
