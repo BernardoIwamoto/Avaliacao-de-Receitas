@@ -1,6 +1,6 @@
-## 🍽 Recipe Evaluation System (SQL)
+##  Recipe Evaluation System (SQL)
 
-Projeto de portfólio com foco em análise de dados e consultas SQL interativas, baseado em receitas e avaliações de usuários da plataforma [Food.com](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews).
+Projeto com foco em análise de dados e consultas SQL interativas, baseado em receitas e avaliações de usuários da plataforma [Food.com](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews).
 
 ###  Objetivo
 
